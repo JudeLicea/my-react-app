@@ -9,7 +9,7 @@ import './App.css'
 
 
 function Square() {
-  const [value, setValue] = useState(null);
+  const [squares, setSquares] = useState(Array(9).fill(null));
 
   function handleClick() {
     setValue('X');
