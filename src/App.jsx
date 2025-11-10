@@ -2,10 +2,28 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react';
+
+
+
 
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+
+  
+  function handleClick() {
+    console.log('clicked!');
+  }
+
+  return (
+    <button
+      className="square"
+      onClick={handleClick}
+    >
+      {value}
+    </button>
+  );
 }
+
 
 export default function Board() {
   return (
@@ -28,3 +46,4 @@ export default function Board() {
     </>
   );
 }
+
